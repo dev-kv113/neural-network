@@ -15,9 +15,28 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 # ---------------------------------
 st.set_page_config(page_title="Sugarcane Yield Prediction", layout="wide")
 
+st.markdown("""
+    <style>
+        .block-container {
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
-st.title("Sugarcane Yield Prediction")
-st.write("Upload historical data, compare Linear Regression, Random Forest, Hybrid, and Neural Network models, then predict yield for fresh input data.")
+st.image("logo.png", width=200)
+st.markdown(
+    """
+    <h2 style="margin-top: -19px; margin-bottom: -6px;">
+        AI Based Advanced Sugarcane Yield Prediction Model
+    </h2>
+    """,
+    unsafe_allow_html=True,
+)
+st.markdown("""
+<p style="margin-bottom: 0.5px;">
+Proprietary AI based yield prediction model developed by Geotrans Technologies Pvt. Ltd.</p>
+""", unsafe_allow_html=True)
 
 
 # ---------------------------------
